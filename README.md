@@ -32,3 +32,14 @@ The response of the service is as follows:
    ]
 }
 ```
+If the value of "state" is 1, the answer is correct, otherwise an error has occurred.
+It has been tested on a local server, but it works with any external server.
+
+In the project, it will be enough to replace the URL in the following fragment:
+
+```java
+final RequestQueue requestQueue = Volley.newRequestQueue(this);
+final String url ="http://YOU_SERVER_URL/movil/web/get_books.php";
+JsonObjectRequest req = new JsonObjectRequest(url, null,
+```
+
