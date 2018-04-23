@@ -2,6 +2,8 @@
 Android Application to reader books from external server.
 
 Android application to show a list of books brought from a server, the web service is consumed and a list is created in a recylerview, if the processing of the answer is correct the list is shown.
+
+
 <br>
 <img src="https://github.com/OsmarICancino/BookReaderApp/blob/master/screen1.png" />
 <br>
@@ -47,6 +49,8 @@ JsonObjectRequest req = new JsonObjectRequest(url, null,
 ```
 
 When the user clicks on a book, the operating system is requested to download and view the pdf file through an Intent:
+
+
 <br>
 <img src="https://github.com/OsmarICancino/BookReaderApp/blob/master/screen2.jpg" />
 <br>
