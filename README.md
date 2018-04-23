@@ -35,11 +35,22 @@ The response of the service is as follows:
 If the value of "state" is 1, the answer is correct, otherwise an error has occurred.
 It has been tested on a local server, but it works with any external server.
 
-In the project, it will be enough to replace the URL in the following fragment:
+In the project, it will be enough to replace the URL in the following fragment in YOU_SERVER_URL value:
 
 ```java
 final RequestQueue requestQueue = Volley.newRequestQueue(this);
 final String url ="http://YOU_SERVER_URL/movil/web/get_books.php";
 JsonObjectRequest req = new JsonObjectRequest(url, null,
 ```
+In the project are attached the configuration files made in PHP, located in the mobile.zip file, there are dis files, in one a singleton model is attached to connect to the database and the Book class (data) and in the another folder (web) are the files to send the answer by GET.
 
+You will only modify the values corresponding to your database in mysql_login.php file:
+
+```
+phpdefine("HOSTNAME", "localhost");// Nombre del host
+define("PORT", "3306");// Número del puerto [ Opcional ]
+define("DATABASE", "biblioteca"); // Nombre de la base de datos
+define("USERNAME", "root"); // Nombre del usuario
+define("PASSWORD", ""); // Constraseña
+
+```
