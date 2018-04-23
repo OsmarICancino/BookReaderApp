@@ -74,7 +74,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.MyViewHolder> 
             public void onClick(View view) {
                 if (permissionUtils.checkPermission(context, STORAGE_PERMISSION_REQUEST_CODE, view)) {
                     try {
-                        context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://10.0.2.2/Biblioteca/archivos/" + items.get(i).nombre_archivo)));
+                        context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://YOU_SERVER_URL/Biblioteca/archivos/" + items.get(i).nombre_archivo)));
                     } catch (Exception e) {
                         e.getStackTrace();
                     }

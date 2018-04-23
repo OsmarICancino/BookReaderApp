@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getData() {
         final RequestQueue requestQueue = Volley.newRequestQueue(this);
-        final String url ="http://10.0.2.2/Biblioteca/movil/web/get_books.php";
+        final String url ="http://YOU_SERVER_URL/movil/web/get_books.php";
         JsonObjectRequest req = new JsonObjectRequest(url, null,
                 new Response.Listener<JSONObject>() {
                     @Override
