@@ -42,7 +42,7 @@ final RequestQueue requestQueue = Volley.newRequestQueue(this);
 final String url ="http://YOU_SERVER_URL/movil/web/get_books.php";
 JsonObjectRequest req = new JsonObjectRequest(url, null,
 ```
-In the project are attached the configuration files made in PHP, located in the mobile.zip file, there are dis files, in one a singleton model is attached to connect to the database and the Book class (data) and in the another folder (web) are the files to send the answer by GET.
+In the project are attached the configuration files made in PHP, located in the mobile.zip file, in one a singleton model is attached to connect to the database and the Book class (data) and in the other folder (web) the files are found to send the answer by GET.
 
 You will only modify the values corresponding to your database in mysql_login.php file:
 
